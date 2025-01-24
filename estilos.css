@@ -225,6 +225,57 @@ form button:hover {
   background-color: #45a049;
 }
 
+/* Estilos para la tabla de contacto */
+.tabla-horario-contacto {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #5c8d73; 
+}
+
+/* Encabezados de la tabla */
+.tabla-horario-contacto thead {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #5c8d73; 
+}
+
+.tabla-horario-contacto th {
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #5c8d73; 
+}
+
+/* Filas de la tabla */
+.tabla-horario-contacto tbody tr {
+  border-bottom: 1px solid #ddd;
+  border: 1px solid #5c8d73; 
+}
+
+.tabla-horario-contacto td {
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+  border: 1px solid #5c8d73; 
+}
+
+/* Colores alternos para las filas */
+.tabla-horario-contacto tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+  border: 1px solid #5c8d73; 
+}
+
+/* Fila al pasar el cursor (hover) */
+.tabla-horario-contacto tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border: 1px solid #5c8d73; 
+}
+
 
 
 /* pagina de la galeria de imagenes */
