@@ -403,59 +403,6 @@ body.pagina-consejos {
   margin-bottom: 40px;
 }
 
-/* Sección principal del contenido */
-.seccion-agenda {
-  padding: 40px 20px;
-  max-width: 100%;
-  margin: 0 ;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Estilo de cada subsección */
-.subseccion {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Títulos de las subsecciones */
-.subseccion h2 {
-  font-size: 22px;
-  color: #4CAF50;
-  margin-bottom: 10px;
-}
-
-/* Párrafos dentro de las subsecciones */
-.subseccion p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
-}
-
-/* Listas dentro de las subsecciones */
-.subseccion ul {
-  margin-left: 20px;
-  color: #555;
-}
-
-
-
-/* Imágenes dentro de las subsecciones */
-.subseccion img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-
-
-
 /* Estilo del footer */
 footer {
   background-color: #4CAF50;
