@@ -1,198 +1,467 @@
-
-/* El cuerpo de la página */
+/* Estilo de la pagina */
 body {
   font-family: Arial, sans-serif; 
-  margin: 0;                      
-  padding: 0;                     
+  margin: 0;                       
+  padding: 0;                      
   background-color: #eaf2e6;      
   color: #333;                    
 }
 
-/* Cabecera de la página */
+/*  estilo del header */
 header {
   background-color: #000000;      
-  color: #fff;                   
-  padding: 0.3%;                  
+  color: #fff;                    
+  padding: 0.7%;                   /* ponemos este pading para que el header se vea mas grande y el menu de opciones mas centrado*/
 }
 
-/* Estilos para el menú de navegación */
-nav ul.menu {
-  margin: 0;                      
-  padding: 0;                     
-  display: flex;                  /* Utiliza flexbox para organizar los elementos */
-  justify-content: center;        /* Centra los elementos dentro del contenedor */
-  gap: 1%;                       /* Añade espacio del 2% entre los elementos */
-}
-
-/* Estilos para el menú de navegación */
+/* Estilos para el menú  */
 nav ul.menu {
   margin: 0;                       
   padding: 0;                      
-  display: flex;                   /* Utiliza flexbox para organizar los elementos */
-  align-items: center;             /* Alinea verticalmente los elementos */
-  justify-content: flex-start;     /* Alinea los elementos a la izquierda */
-  gap: 0.5%;                         /* Añade espacio del 2% entre los elementos */
+  display: flex;                   /* Usamos Flex para organizar los elementos en fila. */
+  align-items: center;             
+  gap: 0.7%;                       /* Le damos un pequeño espacio entre las opciones del menú. */
 }
 
-/* Estilo para el logo */
+/* le damos el estilo al logo dentro del menú */
 nav ul.menu li.logo {
-  margin-right: 10%;              /* Añade un margen del 10% desde la derecha para que se vea mejor con el resto del menu */
-  margin-left: 10%;                /* Añade un margen del 10% desde la izquierda */
+  margin-right: 7%;               
+  margin-left: 5%;               
 }
 
+/* El logo dentro del menú: */
 nav ul.menu li.logo img {
-  height: 50px;                    /* Ajusta el tamaño del escudo */
-  width: auto;                     /* Mantén las medidas del escudo */
+  height: 50px;                    /* El logo tendrá una altura fija de 50px para que no sea tan grande. */
+  width: auto;                     /* La anchura de la imagen se ajusta automáticamente para mantener las proporciones. */
 }
 
-/* Estilo para los elementos de la lista del menú */
+/* Estilo para  los espacios que hay entre las opciones del menú */
 nav ul.menu li {
-  margin: 0;                       /* Elimina márgenes de los elementos de la lista */
-  list-style: none;                /* Elimina el estilo predeterminado de la lista */
+  list-style: none;                /* Quitamos los puntos que aparecen entre las opciones del menu. */
 }
 
-/* Estilo de los enlaces en el menú */
+/* Estilos para los enlaces dentro del menú */
 nav ul.menu li a {
-  color: #fff;                     
-  text-decoration: none;           /* Elimina el subrayado de los enlaces */
+  color: #fff;                    
+  text-decoration: none;           /* Quitamos el subrayado que tienen los enlaces por defecto. */
   font-size: 18px;                 
-  padding: 5px;                    /* Añade relleno alrededor del texto del enlace */
+  padding: 5px;                    /* Añadimos un pequeño padding alrededor del texto para hacerlo más clickable. */
 }
 
-/* Estilo cuando el enlace se pasa el ratón por encima */
+/* Estilo para cuando pasamos el ratón sobre los enlaces */
 nav ul.menu li a:hover {
-  background-color: #2d6a4f;       /* Cambia el fondo a verde oscuro cuando se pasa el ratón */
-  border-radius: 5px;              /* Redondea las esquinas del enlace */
+  background-color: #2d6a4f;       
+  border-radius: 5px;              
 }
 
 
-/* Título de la galería */
+/* Estilos para la página principal */
+body.pagina-principal {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #c1e1c1; 
+  color: #333;
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Contenedor principal */
+.inicio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Estilo para la columna izquierda */
+.inicio .izquierda {
+  flex: 2;                                          /* hace que ocupe por dos el espacio que usaria en el flex */
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.inicio .izquierda h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+
+.inicio .izquierda img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.inicio .izquierda p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Estilo para la columna derecha */
+.inicio .derecha {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;                            /* hace que el contenedor de la izquierda se vea mas grande */
+}
+
+/* Estilo para las noticias en la columna derecha */
+.inicio .derecha .noticia {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+
+}
+
+.inicio .derecha .noticia img {
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  max-height: 250px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.inicio .derecha .noticia h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.inicio .derecha .noticia p {
+  font-size: 16px;
+  color: #777;
+}
+
+
+
+
+/* pagina contactos */
+
+
+body.pagina-contactos {
+  font-family:  Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  min-height: 100%;
+}
+
+.contenido {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;                     /* creo 2 columnas iguales en el grid */
+  gap: 20px;
+}
+
+.contacto-info, .form-section {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.contacto-info h3, .form-section h3 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #4CAF50;
+}
+
+.contacto-info p {
+  margin: 10px 0;
+}
+
+.contacto-info iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+}
+
+
+
+
+/* Formulario */
+form {
+  display: flex; 
+  flex-direction: column; /* Coloca los elementos en una columna (uno debajo del otro) */
+  gap: 15px; 
+}
+
+form label {
+  font-weight: bold; 
+  color: #555; 
+}
+
+form input, form textarea, form button {
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  font-size: 14px; 
+}
+
+
+form button {
+  background-color: #4CAF50; 
+  color: white; 
+  cursor: pointer; 
+  border: none; 
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+
+
+/* pagina de la galeria de imagenes */
+
+
+
+/* Estilos para el título de la galería de imágenes */
 .titulo-galeria {
   text-align: center;              
   font-size: 24px;                 
-  color: #2d6a4f;                  
-  margin-top: 20px;                
-  font-weight: bold;               /* Hace el texto en negrita */
+  color: #2d6a4f;                 
+  font-weight: bold;               
+  
 }
 
-/* Contenedor de imágenes con Grid para organizar en 2 columnas */
+/* Estilo para la galería de imágenes */
 .galeria {
-  display: grid;                   /* Usa grid para organizar las imágenes */
-  grid-template-columns: repeat(2, 1fr); /* Define 2 columnas de tamaño igual */
-  gap: 25px;                       /* Añade espacio entre las imágenes */
-  justify-items: center;           /* Centra las imágenes dentro de las celdas */                 
-  margin-top: 30px;                
+  display: grid;                   /* Usamos grid para organizar las imágenes en filas y columnas */
+  grid-template-columns: repeat(2, 1fr); /* Esto es para hacer dos columnas del mismo tamaño  */
+  gap: 25px;                       /* Separamos las imágenes entre ellas */
+  justify-items: center;           /* Centramos las imágenes dentro de cada cuadrado */
 }
 
-/* Estilo para cada imagen dentro de la galería */
+/* Estilo para cada "imagen" dentro de la galería */
 .galeria .imagen {
-  background: #c1e1c1;             
-  padding: 7px;                   
-  border: 1px solid #5c8d73;       /* Añade un borde verde oscuro alrededor de cada imagen */
-  border-radius: 5px;              /* Redondea las esquinas del borde */
+  background: #c1e1c1;           
+  padding: 5px;                    
+  border: 1px solid #5c8d73;       
+  border-radius: 5px;             
   width: 100%;                     
 }
 
-/* Estilo para las imágenes dentro de la galería */
+/* Las imágenes dentro de la galería */
 .galeria .imagen img {
-  max-width: 100%;                 /* Hace que las imágenes no se estiren más allá del contenedor */
-  height: auto;                    /* Mantiene la proporción original de las imágenes */
-  margin-bottom: 10px;             
+  max-width: 100%;                 /* Aseguramos que la imagen no se estire más de lo que puede */
+  height: auto;                    /* Mantenemos las proporciones de la imagen*/
+  margin-bottom: 10px;            
 }
 
-/* Estilo para los textos de las imágenes dentro de la galería */
+/* El texto debajo de las imágenes en la galería */
 .galeria .imagen p {
-  margin: 0;                       /* Elimina el margen alrededor del párrafo */
-  text-align: center;             
-  font-size: 14px;                
-  color: #4a5d23;                  
-}
-
-/* Footer de la página */
-footer {
-  background-color: #000000;       
-  color: #fff;                     
-  padding: 1%;                    
+  margin: 0;                      
   text-align: center;              
+  font-size: 14px;                 
+  color: #4a5d23;                 
 }
 
-/* Estilos específicos para la página medidas-medioambientales.html */
 
-/* Sección principal de la página */
+/* pagina de las medidas del ayuntamiento */
+
+
+
+/* Estilos para el título  */
 .titulo-ayuntamiento {
   text-align: center;             
-  font-size: 24px;
+  font-size: 24px;                 
   margin-top: 20px;                
-
-}
-main {
-  padding: 40px;                   /* Añade un espacio alrededor del contenido principal */
+  color: #2d6a4f;                  
 }
 
-/* Estilo para la introducción en la página */
+/* Estilo para el párrafo introductorio */
 .intro p {
-  font-size: 18px;                 /* Establece el tamaño de la fuente */
-  text-align: center;              /* Centra el texto */
-  margin-bottom: 40px;             /* Añade un margen en la parte inferior */
+  font-size: 18px;                 
+  text-align: center;             
+  margin-bottom: 40px;            
 }
 
-/* Estilo para cada sección de medida ambiental */
+/* Estilo para las secciones dentro de la página */
 .seccion {
-  display: flex;                   /* Usa flexbox para organizar el contenido */
-  justify-content: space-between;  /* Espacia los elementos para que se alineen a los extremos */
-  align-items: flex-start;         /* Alinea los elementos al inicio del contenedor */
-  margin-bottom: 40px;             /* Añade espacio debajo de cada sección */
+  display: flex;                   /* Usamos Flexbox para organizar los elementos (texto + imagen) de forma horizontal */
+  margin-bottom: 40px;             /* Un buen espacio entre cada sección */
 }
 
-/* Contenedor de imagen y texto en cada sección */
+/* Estilo para el contenedor de imagen y texto dentro de cada sección */
 .seccion .contenido {
-  display: flex;                   /* Usa flexbox dentro de la sección para alinear imagen y texto */
-  justify-content: space-between;  /* Separa la imagen y el texto */
-  align-items: center;             /* Alinea la imagen y el texto verticalmente */
-  gap: 30px;                       /* Añade espacio de 30px entre la imagen y el texto */
+  display: flex;                   
+  justify-content: space-between;  /* Separamos la imagen y el texto para que no estén juntos */
+  align-items: center;             
+  gap: 30px;                       /* Un gap de 30px entre la imagen y el texto */
 }
 
-/* Estilo para las imágenes dentro de cada sección */
+/* Estilo para las imágenes dentro de las secciones */
 .seccion img {
   max-width: 45%;                  
-  border-radius: 8px;              /* Redondea las esquinas de la imagen */
+  border-radius: 8px;              
 }
 
-/* Estilo para el texto dentro de cada sección */
+/* El texto dentro de cada sección */
 .seccion .texto {
-  width: 50%;                      /* El texto ocupa el 50% del ancho del contenedor */
+  width: 50%;                      
 }
 
-/* Estilo para los títulos dentro de cada sección */
+/* Títulos dentro de las secciones */
 .seccion h2 {
   font-size: 24px;                 
   color: #2d6a4f;                  
-  margin-bottom: 20px;             /* Añade espacio debajo de los títulos */
+  margin-bottom: 20px;            
 }
 
-/* Estilo para los párrafos dentro de cada sección */
+/* Párrafos dentro de las secciones */
 .seccion p {
-  font-size: 16px;                 /* Tamaño de la fuente */
-  color: #555;                     
+  font-size: 16px;                 
+  color: #000000;
 }
 
-/* Estilo para la sección de conclusión */
+/* La conclusión de la página */
 .conclusion {
   text-align: center;             
-  font-size: 18px;                 
-  color: #555;                     
+  font-size: 18px;                
+  color: #000000;                  
   margin-top: 50px;                
 }
 
-/* Estilo final para el footer */
-footer {
-  background-color: #000000;       
-  color: #fff;                     
-  padding: 20px;                   /* Relleno alrededor del contenido */
-  text-align: center;              /* Centra el texto */
+
+
+/* pagina consejos */
+
+
+/*  Estilo de la pagina consejos */
+body.pagina-consejos {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+/* estilo del titulo */
+.titulo-consejos {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
 }
 
-/* Estilo para los párrafos dentro del footer */
-footer p {
-  font-size: 14px;                 /* Tamaño de fuente más pequeño */
+/* Estilos para el contenido principal */
+.consejos {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+  background-color: #d9fdd9;
+  padding: 20px;
+}
+
+/* Estilo para la columna izquierda */
+.consejos .empresas {
+  flex: 2;
+  background-color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilo para la columna derecha */
+.consejos .ciudadanos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.imagen-final img {
+  max-width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+  height: 80%; /* Mantiene la relación de aspecto */
+  border-radius: 8px; /* Si quieres darle un borde redondeado */
+  margin-top: 25px;
+}
+
+
+/* Estilo para la página de la Agenda 2030 */
+
+
+/* Título principal de la página */
+.titulo-agenda {
+  text-align: center;
+  font-size: 26px;
+  color: #2d6a4f;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Sección principal del contenido */
+.seccion-agenda {
+  padding: 40px 20px;
+  max-width: 100%;
+  margin: 0 ;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilo de cada subsección */
+.subseccion {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Títulos de las subsecciones */
+.subseccion h2 {
+  font-size: 22px;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+/* Párrafos dentro de las subsecciones */
+.subseccion p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Listas dentro de las subsecciones */
+.subseccion ul {
+  margin-left: 20px;
+  color: #555;
+}
+
+
+
+/* Imágenes dentro de las subsecciones */
+.subseccion img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+
+
+
+/* Estilo del footer */
+footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: 40px;
 }
